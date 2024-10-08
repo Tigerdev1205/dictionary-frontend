@@ -12,7 +12,7 @@ function App() {
       const response = await axios.get(
         `http://localhost:5000/api/dictionary/translate?word=${word}`
       );
-      setTranslation(response.data.Translation);
+      setTranslation(response.data.translation);
       setError("");
     } catch (err) {
       setTranslation("");
